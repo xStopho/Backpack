@@ -1,0 +1,7 @@
+name: Backpack
+version: ${project.version}
+main: net.stopho.backpack.BackpackPlugin
+author: Stopho
+api-version: "1.13"
+load: POSTWORLD
+softdepend:
