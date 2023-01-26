@@ -9,8 +9,8 @@ At the moment there are the Leather Backpack and 5 Upgraded versions.
 
 - Leather - 9 Slots
 - Copper - 18 Slots
-- Gold - 27 Slots
-- Iron - 36 Slots
+- Iron - 27 Slots
+- Gold - 36 Slots
 - Diamond - 45 Slots
 - Netherite - 54 Slots
 
