@@ -4,7 +4,7 @@
   <groupId>net.stopho</groupId>
   <artifactId>backpack</artifactId>
   <name>Backpack</name>
-  <version>0.1-ALPHA</version>
+  <version>0.5-BETA</version>
   <build>
     <resources>
       <resource>

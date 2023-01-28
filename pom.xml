@@ -6,7 +6,7 @@
     <name>Backpack</name>
     <groupId>net.stopho</groupId>
     <artifactId>backpack</artifactId>
-    <version>0.1-ALPHA</version>
+    <version>0.5-BETA</version>
     <packaging>jar</packaging>
 
     <properties>

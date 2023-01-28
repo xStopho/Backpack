@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.CraftItemEvent;
+import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.inventory.CraftingInventory;
@@ -46,6 +47,14 @@ public class ItemCrafting implements Listener {
                 if (item != null && item.getType() == Material.PLAYER_HEAD && ItemPDC.hasLevel(item)) loadInventory(p, item);
             }
             if (taskID.containsKey(p.getUniqueId())) stopSchedular(p);
+        }
+    }
+
+    @EventHandler
+    public static void onInventoryClick(InventoryClickEvent e) {
+        if (e.getInventory() instanceof CraftingInventory) {
+            ItemStack item = e.getCurrentItem();
+            if (item != null && item.getType() == Material.PLAYER_HEAD && ItemPDC.hasLevel(item)) loadInventory((Player) e.getWhoClicked(), item);
         }
     }
 
