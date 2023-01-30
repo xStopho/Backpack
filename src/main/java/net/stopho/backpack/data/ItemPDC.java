@@ -12,7 +12,10 @@ public class ItemPDC {
 
     public static NamespacedKey KEY_LEVEL = new NamespacedKey(BackpackPlugin.getPlugin(), "level");
     public static NamespacedKey KEY_INVENTORY = new NamespacedKey(BackpackPlugin.getPlugin(), "inventory");
-    public static NamespacedKey KEY_ADDON = new NamespacedKey(BackpackPlugin.getPlugin(), "addon");
+    public static NamespacedKey KEY_MINING = new NamespacedKey(BackpackPlugin.getPlugin(), "mining");
+    public static NamespacedKey KEY_FARMING = new NamespacedKey(BackpackPlugin.getPlugin(), "farming");
+    public static NamespacedKey KEY_LOOTING = new NamespacedKey(BackpackPlugin.getPlugin(), "looting");
+    public static NamespacedKey KEY_FISHING = new NamespacedKey(BackpackPlugin.getPlugin(), "fishing");
 
     static PersistentDataContainer getPDC(ItemMeta meta) {
         return meta.getPersistentDataContainer();
@@ -58,23 +61,27 @@ public class ItemPDC {
         item.setItemMeta(meta);
     }
 
-    public static void setAddon(ItemStack item, String addon) {
+    public static void setUpgradeDefault(ItemStack item) {
         ItemMeta meta = item.getItemMeta();
-        getPDC(meta).set(KEY_ADDON, PersistentDataType.STRING, addon);
+        getPDC(meta).set(KEY_MINING, DataType.BOOLEAN, false);
+        getPDC(meta).set(KEY_FARMING, DataType.BOOLEAN, false);
+        getPDC(meta).set(KEY_LOOTING, DataType.BOOLEAN, false);
+        getPDC(meta).set(KEY_FISHING, DataType.BOOLEAN, false);
+        item.setItemMeta(meta);
+    }
+    public static void activateUpgrade(ItemStack item, NamespacedKey key) {
+        ItemMeta meta = item.getItemMeta();
+        getPDC(meta).set(key, DataType.BOOLEAN, true);
         item.setItemMeta(meta);
     }
 
-    public static String getAddon(ItemStack item) {
-        return getPDC(item.getItemMeta()).get(KEY_ADDON, PersistentDataType.STRING);
+    public static boolean hasUpgrade(ItemStack item, NamespacedKey key) {
+        return getPDC(item.getItemMeta()).has(key, DataType.BOOLEAN);
     }
 
-    public static boolean hasAddon(ItemStack item) {
-        return getPDC(item.getItemMeta()).has(KEY_INVENTORY, PersistentDataType.STRING);
-    }
-
-    public static void removeAddon(ItemStack item) {
+    public static void removeUpgrade(ItemStack item, NamespacedKey key) {
         ItemMeta meta = item.getItemMeta();
-        getPDC(meta).remove(KEY_ADDON);
+        getPDC(meta).set(key, DataType.BOOLEAN, false);
         item.setItemMeta(meta);
     }
 }

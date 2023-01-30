@@ -1,0 +1,59 @@
+# You can change the name and the look of the Backpacks.
+# If you want to change the Texture of the backpacks you can go
+# to the following website:
+# https://minecraft-heads.com/custom-heads/search?searchword=Backpack
+#       1. Choose and click a Backpack texture you Like
+#       2. Click in the upper area "Download Texture"
+#       3. Copy the textures.minecraft.net Link
+
+Backpack:
+  level:
+    leather:
+      name: "Leather Backpack"
+      texture-link: "https://textures.minecraft.net/texture/40b1b53674918391a07a9d00582c058f9280bc526a716c796ee5eab4be10a760"
+
+    copper:
+      name: "Copper Backpack"
+      texture-link: "https://textures.minecraft.net/texture/1e583cb771581d3b27b23f617c7b8a43dcd7220447ff95ff1960414d2350bdb9"
+
+    iron:
+      name: "Iron Backpack"
+      texture-link: "https://textures.minecraft.net/texture/ddaf8edc32afb461aee0713058023101f924e2a7efa883dae72d5d57d4c053d7"
+
+    gold:
+      name: "Gold Backpack"
+      texture-link: "https://textures.minecraft.net/texture/cf87525ad84efd16806a26ca01984b280e5ba6403505b6f6c9803c24642abfc7"
+
+    diamond:
+      name: "Diamond Backpack"
+      texture-link: "https://textures.minecraft.net/texture/10d1b0732bf7a70de4dc01559cc5c9811068ef7b6095010382709f94093927f6"
+
+    netherite:
+      name: "Netherite Backpack"
+      texture-link: "https://textures.minecraft.net/texture/835d7cc09fffbca3e1c00d421afaa432cf71fcb09555f54523e5220d1af0f97d"
+
+upgrades:
+  # Decide if Upgrades are generally enabled
+  # and if the Upgrades are combinable
+  enabled: true
+  combinable: true
+
+  # Decide if specific Upgrades aren't enabled and set the prefix.
+  # If only one Upgrades is used on a Backpack the Prefix is shown in the Item name.
+  # If more than one Upgrade is set on a Backpack there will be a List in the Lore section
+  # of the Backpack
+  mining:
+    prefix: "Mining"
+    enabled: true
+
+  farming:
+    prefix: "Farming"
+    enabled: true
+
+  fishing:
+    prefix: "Fishing"
+    enabled: true
+
+  looting:
+    prefix: "Looting"
+    enabled: true

@@ -18,11 +18,12 @@ At the moment there are the Leather Backpack and 5 Upgraded versions.
 
 ## Upcoming Features
 
-- Cross-Platform Support
-  - Server with [GeyserMC](https://geysermc.org/)
+
 - add more Backpack variants
 - rework the recipes
 - adding optional Add-Ons 
   - Mining, Farming, Hunting etc.
 - Implement Multi Language support
+- Cross-Platform Support
+  - Server with [GeyserMC](https://geysermc.org/)
 - Keep it updated *duh*

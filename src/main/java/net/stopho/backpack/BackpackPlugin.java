@@ -15,6 +15,7 @@ public class BackpackPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         plugin = this;
+        saveDefaultConfig();
         registerEvents();
         registerRecipes();
 
@@ -38,4 +39,5 @@ public class BackpackPlugin extends JavaPlugin {
     public static BackpackPlugin getPlugin() {
         return plugin;
     }
+
 }
