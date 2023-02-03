@@ -7,53 +7,70 @@
 #       3. Copy the textures.minecraft.net Link
 
 Backpack:
+  upgrades:
+    # Decide if Upgrades are generally enabled
+    enabled: true
+    # Enable or disable specific Backpack Upgrades
+    mining: true
+    farming: true
+    looting: true
+    fishing: true
+
   level:
     leather:
-      name: "Leather Backpack"
-      texture-link: "https://textures.minecraft.net/texture/40b1b53674918391a07a9d00582c058f9280bc526a716c796ee5eab4be10a760"
+      name:
+       base: "Leather Backpack"
+       mining: "Leather Mining Backpack"
+       farming: "Leather Farming Backpack"
+       looting: "Leather Looting Backpack"
+       fishing: "Leather Fishing Backpack"
+      texture-link:
+        base: "https://textures.minecraft.net/texture/40b1b53674918391a07a9d00582c058f9280bc526a716c796ee5eab4be10a760"
+        mining: "https://textures.minecraft.net/texture/8351e505989838e27287e7afbc7f97e796cab5f3598a76160c131c940d0c5"
+        farming: "https://textures.minecraft.net/texture/40b1b53674918391a07a9d00582c058f9280bc526a716c796ee5eab4be10a760"
+        looting: "https://textures.minecraft.net/texture/40b1b53674918391a07a9d00582c058f9280bc526a716c796ee5eab4be10a760"
+        fishing: "https://textures.minecraft.net/texture/40b1b53674918391a07a9d00582c058f9280bc526a716c796ee5eab4be10a760"
 
     copper:
-      name: "Copper Backpack"
-      texture-link: "https://textures.minecraft.net/texture/1e583cb771581d3b27b23f617c7b8a43dcd7220447ff95ff1960414d2350bdb9"
+      name:
+        base: "Copper Backpack"
+        mining: "Copper Mining Backpack"
+        farming: "Copper Farming Backpack"
+        looting: "Copper Looting Backpack"
+      texture-link:
+        base: "https://textures.minecraft.net/texture/1e583cb771581d3b27b23f617c7b8a43dcd7220447ff95ff1960414d2350bdb9"
+        mining: "https://textures.minecraft.net/texture/a37a35522f67b2af92345592846b702b9afb9d7c8dbad5ea150673c9e44de3"
+        farming: "https://textures.minecraft.net/texture/1e583cb771581d3b27b23f617c7b8a43dcd7220447ff95ff1960414d2350bdb9"
+        looting: "https://textures.minecraft.net/texture/1e583cb771581d3b27b23f617c7b8a43dcd7220447ff95ff1960414d2350bdb9"
 
     iron:
-      name: "Iron Backpack"
-      texture-link: "https://textures.minecraft.net/texture/ddaf8edc32afb461aee0713058023101f924e2a7efa883dae72d5d57d4c053d7"
+      name:
+        base: "Iron Backpack"
+        mining: "Iron Mining Backpack"
+      texture-link:
+        base: "https://textures.minecraft.net/texture/ddaf8edc32afb461aee0713058023101f924e2a7efa883dae72d5d57d4c053d7"
+        mining: "https://textures.minecraft.net/texture/5a5fc7635296ca183fd30b0fb5f4c18cfc216768f0fbebb865e0211ab43b7b"
 
     gold:
-      name: "Gold Backpack"
-      texture-link: "https://textures.minecraft.net/texture/cf87525ad84efd16806a26ca01984b280e5ba6403505b6f6c9803c24642abfc7"
+      name:
+        base: "Gold Backpack"
+        mining: "Gold Mining Backpack"
+      texture-link:
+        base: "https://textures.minecraft.net/texture/cf87525ad84efd16806a26ca01984b280e5ba6403505b6f6c9803c24642abfc7"
+        mining: "https://textures.minecraft.net/texture/a254aacbf623175ff98df7ae366e0b89e91713441752f3cdf965f038b174b5"
 
     diamond:
-      name: "Diamond Backpack"
-      texture-link: "https://textures.minecraft.net/texture/10d1b0732bf7a70de4dc01559cc5c9811068ef7b6095010382709f94093927f6"
+      name:
+        base: "Diamond Backpack"
+        mining: "Diamond Mining Backpack"
+      texture-link:
+        base: "https://textures.minecraft.net/texture/10d1b0732bf7a70de4dc01559cc5c9811068ef7b6095010382709f94093927f6"
+        mining: "https://textures.minecraft.net/texture/a3c153c391c34e2d328a60839e683a9f82ad3048299d8bc6a39e6f915cc5a"
 
     netherite:
-      name: "Netherite Backpack"
-      texture-link: "https://textures.minecraft.net/texture/835d7cc09fffbca3e1c00d421afaa432cf71fcb09555f54523e5220d1af0f97d"
-
-upgrades:
-  # Decide if Upgrades are generally enabled
-  # and if the Upgrades are combinable
-  enabled: true
-  combinable: true
-
-  # Decide if specific Upgrades aren't enabled and set the prefix.
-  # If only one Upgrades is used on a Backpack the Prefix is shown in the Item name.
-  # If more than one Upgrade is set on a Backpack there will be a List in the Lore section
-  # of the Backpack
-  mining:
-    prefix: "Mining"
-    enabled: true
-
-  farming:
-    prefix: "Farming"
-    enabled: true
-
-  fishing:
-    prefix: "Fishing"
-    enabled: true
-
-  looting:
-    prefix: "Looting"
-    enabled: true
+      name:
+        base: "Netherite Backpack"
+        mining: "Netherite Mining Backpack"
+      texture-link:
+        base: "https://textures.minecraft.net/texture/835d7cc09fffbca3e1c00d421afaa432cf71fcb09555f54523e5220d1af0f97d"
+        mining: "https://textures.minecraft.net/texture/5eb65bbe744945841e9234a33b5ce5cc236f6a2fc93a1a3ae42df77c9084df1e"
