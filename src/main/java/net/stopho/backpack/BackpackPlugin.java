@@ -18,8 +18,6 @@ public class BackpackPlugin extends JavaPlugin {
         saveDefaultConfig();
         registerEvents();
         registerRecipes();
-
-        getCommand("test").setExecutor(new CmdTest());
     }
 
     void registerEvents() {

@@ -4,7 +4,3 @@ main: net.stopho.backpack.BackpackPlugin
 author: Stopho
 api-version: "1.13"
 load: POSTWORLD
-
-commands:
-  test:
-    description: Test some functions
